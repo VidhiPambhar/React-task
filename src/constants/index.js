@@ -1,1 +1,1 @@
-export {default as dummyData} from './dummyData.json'
+export {default as apiConst} from './apiConst'

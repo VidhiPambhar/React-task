@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { Header, MovieCards } from "../../components";
-import { dummyData } from "../../constants";
+import useMovieList from "./useMovieList";
+
 const MovieList = () => {
-  const data = dummyData.results;
+  const [movieData, setMovieData] = useState([]);
+  const { responseData } = useMovieList();
+
+  useEffect(() => {
+    responseData().then((res) => setMovieData(res));
+  },[]);
+
   return (
-    <>
+    
       <Container>
-        <Header/>
+        <Header />
         <Row>
-          {data.map((item) => (
-            <MovieCards
-              title={item.title}
-              episode_id={item.episode_id}
-              release_date={item.release_date}
-              director={item.director}
-            />
-          ))}
+          {movieData.length > 0 &&
+            movieData.map((item) => (
+              <MovieCards
+                title={item.title}
+                episode_id={item.episode_id}
+                release_date={item.release_date}
+                director={item.director}
+              />
+            ))}
         </Row>
       </Container>
-    </>
+    
   );
 };
 

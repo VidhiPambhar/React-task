@@ -11,9 +11,9 @@ const MovieCards = ({ title, episode_id, director, release_date }) => {
         <Card className="card">
           <Card.Body>
             <Card.Title className="title">{title}</Card.Title>
-            <Card.Text>{episode_id}</Card.Text>
-            <Card.Body>{director}</Card.Body>
-            <Card.Subtitle>{release_date}</Card.Subtitle>
+            <Card.Text className="body">{episode_id}</Card.Text>
+            <Card.Text className="body">{director}</Card.Text>
+            <Card.Text className="date">{release_date}</Card.Text>
           <Button className="details-button" variant="primary">View More</Button>
           </Card.Body>
         </Card>
