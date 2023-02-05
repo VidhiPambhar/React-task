@@ -1,0 +1,1 @@
+export {default as dummyData} from './dummyData.json'

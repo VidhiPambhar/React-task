@@ -1,0 +1,15 @@
+.title{
+   color:#0000ff
+}
+.card{
+    padding:1rem;
+     width: 18rem;
+     margin-bottom:2rem;
+     background-color:#9CC5C9 ;
+}
+.details-button{
+    background-color: rgb(78, 112, 112);
+    cursor: pointer;
+    margin-top:2rem;
+    border-color: rgb(78, 112, 112);
+}
