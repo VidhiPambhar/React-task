@@ -1,17 +1,16 @@
 import { getData } from "../../services";
 
-const useMovieList = (endPoint) => {
+const useDetailsPage = (endPoint) => {
   const responseData = () =>
     getData(endPoint)
       .then((res) => {
         if (res?.status === 200) {
-          return res?.data?.results;
+          return res?.data
         }
       })
       .catch((error) => error);
-
   return {
     responseData,
   };
 };
-export default useMovieList;
+export default useDetailsPage;

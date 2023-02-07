@@ -1,10 +1,10 @@
 import './App.css';
-import { MovieList } from './modules';
+import Router from './routes/Router';
 
 function App() {
   return (
     <div className="App">
-      <MovieList/>
+      <Router/>
     </div>
   );
 }

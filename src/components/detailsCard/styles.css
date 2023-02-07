@@ -1,0 +1,34 @@
+.cardDetails{ 
+    background-image: url('https://bbg-fl.com/wp-content/uploads/2018/01/home.jpg'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+    background-position: center;  
+    padding: 100px 0; 
+    color: #fff; 
+    height: 100vh; 
+  } 
+  .cardDetails h2{ 
+    
+    margin-bottom: 0; 
+    color: #FFF; 
+  } 
+  .date-row { 
+    width: 100%; 
+  } 
+  .date-row label{ 
+    font-weight: 500; 
+    padding-right: 15px; 
+    color: #ccc; 
+    margin: 0 0 10px; 
+    font-size: 16px; 
+  } 
+  .cardDetails h3{ 
+    font-size: 20px; 
+    margin-bottom: 5px; 
+    padding: 0; 
+  } 
+  .cardDetails p{ 
+    font-size: 16px; 
+    line-height: 20px; 
+  }
