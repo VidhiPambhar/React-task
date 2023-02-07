@@ -1,0 +1,26 @@
+.title{
+   color:#12cc78
+}
+
+.body{
+    color: azure;
+}
+.date{
+    font-size:"5px";
+    color:gray
+}
+
+.card{
+    border-radius: 2rem;
+    padding:1rem;
+    width: 18rem;
+     margin-bottom:4rem;
+     background-color:#0d253f;
+}
+.details-button{
+    background-color:#b7d7e8;
+    color: #0d253f;
+    cursor: pointer;
+    margin-top:2rem;
+    border-color: #b7d7e8;
+}
